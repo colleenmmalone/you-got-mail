@@ -10,6 +10,12 @@ import { Dialog, DialogPortal } from "@radix-ui/react-dialog";
 /* TODO 
 add a quick copy for user
 seal kiss animation on click
+
+NETFLLIFY
+preview image isn't called correctly
+try @ path?
+src/assets/lips.png referenced in src/assets/lips.png didn't 
+resolve at build time, it will remain unchanged to be resolved at runtime
 */
 
 type Inputs = {
