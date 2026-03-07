@@ -9,6 +9,7 @@ export default {
     "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
+
   theme: {
     container: {
       center: true,
@@ -74,7 +75,7 @@ export default {
         },
       },
       cursor: {
-        "lips": "url(src/assets/lips.png), auto", // Add your custom cursor
+        lips: "url(src/assets/lips.png), auto", // Add your custom cursor
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -119,6 +120,19 @@ export default {
             opacity: "1",
           },
         },
+        kiss: {
+          "0%": {
+            opacity: "0",
+          },
+          "25%": {
+            opacity: "1",
+          },
+          "100%": {
+            opacity: "0",
+            transform: "translate(-10px,-35px)",
+            scale: "120%",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -129,6 +143,7 @@ export default {
         "flap-open": "flap-open 0.5s ease-in-out forwards",
         "letter-rise": "letter-rise 0.6s ease-out forwards",
         appear: "appear 2s ease-in-out",
+        kiss: " kiss 700ms ease-in-out forwards",
       },
     },
   },

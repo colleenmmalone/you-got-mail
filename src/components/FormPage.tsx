@@ -1,11 +1,10 @@
 // import { useForm, SubmitHandler } from "react-hook-form";
 import { cn } from "@/lib/utils";
-import seal from "../assets/seal.png";
+import {seal} from "../assets/index";
 import LetterPage from "./LetterPage";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import copy from 'copy-to-clipboard';
-import { Dialog, DialogPortal } from "@radix-ui/react-dialog";
 
 /* TODO 
 add a quick copy for user
@@ -53,7 +52,7 @@ const FormPage = () => {
     copy(url)
 
     // inform user 
-    alert("share link was copied! You will now navigate to your letter")
+    alert("Share link was copied! You will now navigate to your letter")
 
     // navigate to preview 
     navigate(url);

@@ -94,8 +94,9 @@
   * {
     @apply border-border;
   }
+
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground relative;
     font-family: 'Lora', serif;
   }
 }
@@ -104,6 +105,7 @@
   .font-display {
     font-family: 'Playfair Display', serif;
   }
+
   .font-body {
     font-family: 'Helvetica Neue', sans-serif;
   }
@@ -112,5 +114,3 @@
     font-family: "Italianno", cursive;
   }
 }
-
-

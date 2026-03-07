@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import SentLetter from "./pages/SentLetter";
+import CursorClickAnimation from "./components/CursorClickAnimation";
 
 const queryClient = new QueryClient();
 
@@ -14,6 +15,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <CursorClickAnimation />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
